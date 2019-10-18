@@ -16,9 +16,18 @@ def square(color):
         t.left(90)
     t.end_fill()
 
-for i in range(12):
-    for j in range(12):
-        color = "black"
+x = 0
+y = 0
+
+while(x < 5):
+    x = int(input("x = "))
+
+while(y < 5):
+    y = int(input("y = "))
+
+for i in range(x):
+    for j in range(y):
+        color = "red"
         if(random.randint(0, 2) <= 1):
             color = "white"
         square(color)
@@ -30,7 +39,7 @@ for i in range(12):
 t.penup()
 t.setpos(-275, 325)
 t.pendown()
-t.color("red")
+t.color("green")
 t.width(5)
 
 def up():
